@@ -3,9 +3,9 @@
 #include <time.h>
 
 /**
- * main - print if the number is positive, negative or 0
+ * main - main function of generating a random number
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  *
  */
 
@@ -28,6 +28,5 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-
 	return (0);
 }
