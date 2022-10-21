@@ -1,26 +1,28 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_number - prints int with putchar
- * @n: takes number, hello
+ * print_number - print an integer (with no trailing newline)
+ * @n: integer to print
  *
  * Return: void
  */
-
 void print_number(int n)
 {
 	unsigned int m;
 
-	if (n < 0)
+	if (n >= 0)
 	{
-		_putchar('-');
-		m = -n;
+		if (n >= 10)
+			print_number(n / 10);
+		_putchar('0' + n % 10);
 	}
 	else
 	{
-		m = n;
+		_putchar('-');
+		m = -1 * n;
+		if (m >= 10)
+			print_number(m / 10);
+		_putchar('0' + m % 10);
 	}
-	if (m / 10 != 0)
-		print_number(m / 10);
-		_putchar((m % 10) + '0');
+
 }
