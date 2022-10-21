@@ -1,7 +1,3 @@
-/*
- * File: 100-times_table.c
- */
-
 #include "main.h"
 
 /**
