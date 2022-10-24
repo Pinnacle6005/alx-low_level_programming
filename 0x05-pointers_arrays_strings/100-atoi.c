@@ -29,7 +29,7 @@
 * J: else we had an odd number of minuses and we return the result times -1
 */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	int counter = 0;/* A */
 	int i = 0;
@@ -50,4 +50,8 @@ int _atoi(char *s);
 	counter++;/* G */
 	}
 	if (i == 0)/* H */
-
+		return (0);
+	if (sign % 2 == 0)/* I */
+		return (result);
+	return (result * -1);/* J */
+}
