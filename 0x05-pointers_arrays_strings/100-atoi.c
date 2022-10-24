@@ -29,7 +29,7 @@
 * J: else we had an odd number of minuses and we return the result times -1
 */
 
-int _atoi(char *s)
+int _atoi(char *s);
 {
 	int counter = 0;/* A */
 	int i = 0;
