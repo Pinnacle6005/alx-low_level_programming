@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_content_of_array - reverse the content of an array of intergers
+ * reverse_array - reverse the content of an array of intergers
  *
  * @a: pointer to int to check
  * @n: int to check
